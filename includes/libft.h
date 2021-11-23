@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:33:59 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/18 05:51:45 by nismail       ########   odam.nl         */
+/*   Updated: 2021/11/23 03:53:54 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ void	*ft_realloc(void *ptr, size_t size);
 char	*ft_strdup(const char *str);
 char	*ft_substr(char const *str, unsigned int index, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strnjoin(char const *str1, char const *str2, int n);
 char	*ft_strtrim(char const *str, char const *set);
 char	**ft_split(char const *str1, char c);
 char	*ft_itoa(int n);
