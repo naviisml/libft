@@ -1,31 +1,8 @@
-# C Boilerplate
+# Libft
 
-## Features
+Libft is one of the first projects on Codam, Libft is your own library which will be used throughout the first year. This libft has a score of (125/100), yes, it includes the bonus and some custom functions.
 
-- Uses Makefile for compilation
-- Rich configuration located in the `Makefile`
-- Including `srcs/` and `includes/` folder for the source files.
-- Special `objects/` folder for `.o` files
-- Seperated `build/` folder the final build files
+## Added functionality
 
-## Commands
-
-To build the program in the final stage, the `all` rule as followed in a terminal;
-```
-make all
-```
-
-To build the final script, and run it after compilation, you may use the `dev` command used as followed in a terminal;
-```
-make dev
-```
-
-To clean up the `objects/` files and folder, you can use the `clean` command as followed in a terminal;
-```
-make clean
-```
-
-To remove both the `objects/` files, the `build` files and the compiled program file, you can simply use the `fclean` command as followed in a terminal;
-```
-make fclean
-```
+`ft_hextoint()`
+`ft_floor()`
