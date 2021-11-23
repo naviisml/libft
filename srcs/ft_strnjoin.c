@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strjoin.c                                       :+:    :+:            */
+/*   ft_strnjoin.c                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:34:23 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/23 03:52:39 by nismail       ########   odam.nl         */
+/*   Updated: 2021/11/23 03:54:06 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,29 @@
 *
 */
 
-char	*ft_strjoin(char const *str1, char const *str2)
+char	*ft_strnjoin(char const *str1, char const *str2, int n)
 {
-	char	*res;
+	int		len;
+	int		str1_len;
+	int		str2_len;
+	char	*tmp;
 
-	res = ft_strnjoin(str1, str2, ft_strlen(str2));
-	if (!res)
+	if (!str1 && !str2)
+		return (ft_strdup(""));
+	if (!str1)
+		return (ft_strdup(str2));
+	if (!str2)
+		return (ft_strdup(str1));
+	str1_len = ft_strlen(str1);
+	str2_len = ft_strlen(str2);
+	if (str2_len > n)
+		str2_len = n;
+	len = str1_len + str2_len;
+	tmp = malloc((len + 1) * sizeof(char));
+	if (!tmp)
 		return (0);
-	return (res);
+	ft_memmove(tmp, str1, str1_len);
+	ft_memmove(tmp + str1_len, str2, str2_len);
+	tmp[len] = 0;
+	return (tmp);
 }
