@@ -4,6 +4,15 @@ The libft project is aimed to get you familiar with the C programming language. 
 
 ## Extra functions
 
+**ft_itoa_base**
+
+I've added ft_itoa_base, and re-worked ft_itoa to just be a wrapper around this function on base 10, this allowed me to remove multiple functions and merge them into one. This also affects the [ft_printf](https://github.com/naviisml/ft_printf), as int, hex and pointers can now be printed using this 1 function.
+
+```
+char	*ft_itoa_base(__int128 nbr, int base);
+char	*ft_itoa(int nbr);
+```
+
 **ft_realloc**
 
 For various reasons, I decided to add a `ft_realloc()` function which re-allocates memory for a specific ptr.
@@ -15,7 +24,7 @@ void	*ft_realloc(void *ptr, size_t size);
 
 **ft_floor**
 
-For various functions in my [ft_printf](https://github.com/naviisml/ft_printf) and libft, I decided to add the ft_floor function, which returns the length of a given long.
+For various functions in my [ft_printf](https://github.com/naviisml/ft_printf) and libft, I decided to add the ft_floor function, which returns a integer of the length of a given parameter.
 
 Prototype:
 ```
