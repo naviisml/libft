@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:35:45 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/02 13:39:04 by nismail       ########   odam.nl         */
+/*   Updated: 2021/12/05 17:39:56 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 int	ft_isalpha(int arg)
 {
 	if (arg >= 'a' && arg <= 'z')
-		return (1);
+		return (2);
 	else if (arg >= 'A' && arg <= 'Z')
 		return (1);
 	else
