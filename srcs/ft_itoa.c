@@ -6,55 +6,65 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:35:16 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/16 21:28:57 by nismail       ########   odam.nl         */
+/*   Updated: 2021/12/05 15:57:31 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-static char	*ft_itoa_subfunc(long nbr, int is_negative)
+/*
+ * The ft_itoc_base() functions converts the int i to the base
+ * specified by int base.
+ */
+char	ft_itoc_base(int i, int base)
 {
-	char	*str;
-	int		i;
+	char	c;
 
-	i = 0;
-	str = malloc(ft_floor(nbr) + 1);
+	if ((i % base) > 9)
+		c = (i % base) + 55;
+	else
+		c = (i % base) + 48;
+	return (c);
+}
+
+/*
+ * The ft_itoa_base() functions converts the int128 nbr to the base
+ * specified by int base.
+ */
+char	*ft_itoa_base(__int128 nbr, int base)
+{
+	char		*str;
+	int			index;
+	int			len;
+	__int128	tmp;
+
+	index = 0;
+	len = ft_floor(nbr);
+	str = malloc(len + 1);
 	if (!str)
 		return (0);
-	while (nbr > 0)
-	{
-		str[i] = nbr % 10 + '0';
-		nbr /= 10;
-		i++;
-	}
-	if (is_negative == 1)
-	{
-		str[i] = '-';
-		str[i + 1] = '\0';
-	}
+	if (nbr < 0)
+		tmp = -nbr;
+	else if (nbr == 0)
+		return (ft_strdup("0"));
 	else
+		tmp = nbr;
+	while (tmp != 0)
 	{
-		str[i] = '\0';
+		str[index++] = ft_itoc(tmp, base);
+		tmp /= base;
 	}
+	if (nbr < 0)
+		str[index++] = '-';
+	str[index] = '\0';
 	return (ft_strrev(str));
 }
 
 /*
-*
-* The ft_itoa() function allocates (with malloc(3)) and 
-* returns a string representing  the integer received as 
-* an argument. Negative numbers must be handled.
-*
-*/
-
-char	*ft_itoa(int n)
+ * The ft_itoa() functions converts the int i to base 10, ft_itoa()
+ * is considered a wrapper for ft_itoa_base(__int128 nbr, int base)
+ */
+char	*ft_itoa(int nbr)
 {
-	long	nbr;
-
-	nbr = (long)n;
-	if (n == 0 || !n)
-		return (ft_strdup("0"));
-	if (nbr < 0)
-		return (ft_itoa_subfunc(-nbr, 1));
-	return (ft_itoa_subfunc(nbr, 0));
+	return (ft_itoa_base((__int128)nbr, 10));
 }

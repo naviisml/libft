@@ -4,13 +4,13 @@ The libft project is aimed to get you familiar with the C programming language. 
 
 ## Extra functions
 
-**ft_inttohex**
+**ft_realloc**
 
-For various bonus flag in the [ft_printf](https://github.com/naviisml/ft_printf) project, I've added 1 simple function to my libft converting a unsigned long long to the hex value.
+For various reasons, I decided to add a `ft_realloc()` function which re-allocates memory for a specific ptr.
 
 Prototype:
 ```
-char	*ft_inttohex(unsigned long long decimal);
+void	*ft_realloc(void *ptr, size_t size);
 ```
 
 **ft_floor**
@@ -19,7 +19,7 @@ For various functions in my [ft_printf](https://github.com/naviisml/ft_printf) a
 
 Prototype:
 ```
-int		ft_floor(long nbr);
+int		ft_floor(__int128 nbr);
 ```
 
 **ft_strnjoin**

@@ -15,7 +15,6 @@ SOURCE_FILES	=	ft_isalpha.c \
 					ft_isalnum.c \
 					ft_isascii.c \
 					ft_isprint.c \
-					ft_inttohex.c \
 					ft_strlen.c \
 					ft_strrev.c \
 					ft_memset.c \

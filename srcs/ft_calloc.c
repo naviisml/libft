@@ -5,29 +5,26 @@
 /*                                                     +:+                    */
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/10/11 01:41:53 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/16 21:28:57 by nismail       ########   odam.nl         */
+/*   Created: 2021/10/28 15:54:59 by nismail       #+#    #+#                 */
+/*   Updated: 2021/12/05 15:53:22 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
 /*
-*
-* The ft_malloc(), ft_calloc(), ft_valloc(), ft_realloc(), 
-* and ft_reallocf() functions allocate memory. The allocated 
-* memory is aligned such that it can be used for any data type, 
-* including AltiVec- and SSE-related types.  The free() function 
-* frees allocations that were created via the preceding 
-* allocation functions.
-* 
-* The ft_calloc() function contiguously allocates enough space 
-* for count objects that are size bytes of memory each and 
-* returns a pointer to the allocated memory.  The allocated 
-* memory is filled with bytes of value zero.
-*
-*/
-
+ * The ft_malloc(), ft_calloc(), ft_valloc(), ft_realloc(), 
+ * and ft_reallocf() functions allocate memory. The allocated 
+ * memory is aligned such that it can be used for any data type, 
+ * including AltiVec- and SSE-related types.  The free() function 
+ * frees allocations that were created via the preceding 
+ * allocation functions.
+ * 
+ * The ft_calloc() function contiguously allocates enough space 
+ * for count objects that are size bytes of memory each and 
+ * returns a pointer to the allocated memory.  The allocated 
+ * memory is filled with bytes of value zero.
+ */
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
