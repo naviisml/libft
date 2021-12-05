@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:35:16 by nismail       #+#    #+#                 */
-/*   Updated: 2021/12/05 15:57:31 by navi          ########   odam.nl         */
+/*   Updated: 2021/12/05 16:21:13 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	*ft_itoa_base(__int128 nbr, int base)
 		tmp = nbr;
 	while (tmp != 0)
 	{
-		str[index++] = ft_itoc(tmp, base);
+		str[index++] = ft_itoc_base(tmp, base);
 		tmp /= base;
 	}
 	if (nbr < 0)
