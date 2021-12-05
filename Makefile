@@ -86,7 +86,7 @@ $(NAME): $(OBJECT_FILES)
 
 # Compile the program with bonus...
 bonus: $(NAME) $(BONUS_OBJECT_FILES)
-	@echo "Building bonus... (100%)"
+	@echo "Building $(NAME) bonus... (100%)"
 	$(AR) $(AR_FLAGS) $(NAME) $(BONUS_OBJECT_FILES)
 
 all: $(NAME)
