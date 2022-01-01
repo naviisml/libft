@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:33:59 by nismail       #+#    #+#                 */
-/*   Updated: 2021/12/05 15:56:16 by navi          ########   odam.nl         */
+/*   Updated: 2022/01/01 02:46:05 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ char	*ft_strtolower(char *str);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_realloc(void *ptr, size_t size);
+char	**ft_realloc_dp(char **str, int len);
 char	*ft_strdup(const char *str);
 char	*ft_substr(char const *str, unsigned int index, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
