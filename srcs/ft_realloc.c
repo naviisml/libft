@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/14 08:37:57 by nismail       #+#    #+#                 */
-/*   Updated: 2022/01/01 02:46:48 by navi          ########   odam.nl         */
+/*   Updated: 2022/01/20 14:29:28 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,12 @@
 */
 char	**ft_realloc_dp(char **str, int len)
 {
-	void *tmp = ft_realloc(str, (2 * len) * sizeof tmp);
+	void	*tmp;
+
+	tmp = ft_realloc(str, (2 * len) * sizeof tmp);
 	if (!tmp)
-	return (0);
-		str = tmp;
+		return (0);
+	str = tmp;
 	ft_memset(str + len, 0, (len * sizeof(tmp)));
 	len *= 2;
 	return (str);
