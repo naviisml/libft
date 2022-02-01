@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strcmp.c                                        :+:    :+:            */
+/*   ft_strcmpchr.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/10/13 08:34:35 by nismail       #+#    #+#                 */
-/*   Updated: 2022/01/30 00:47:20 by nismail       ########   odam.nl         */
+/*   Created: 2021/11/23 04:14:45 by nismail       #+#    #+#                 */
+/*   Updated: 2022/01/30 01:28:03 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <get_next_line.h>
+
 /*
- * The ft_strcmp() functions lexicographically compare 
- * the null-terminated strings s1 and s2.
+ * The ft_strcmpchr() functions lexicographically compare 
+ * the null-terminated string str with char c.
+ * 
+ * This is subject to change, and therefor not included in libft (yet)
  */
-int	ft_strcmp(const char *str1, const char *str2)
+int	ft_strcmpchr(const char *str, const char c)
 {
-	while (*str1 && *str1 == *str2)
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0' && str[i] != c)
 	{
-		str1++;
-		str2++;
+		i++;
 	}
-	return ((int)(unsigned char)*str1 - (unsigned char)*str2);
+	return ((int)str[i] - c);
 }
