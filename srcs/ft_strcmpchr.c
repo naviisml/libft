@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <get_next_line.h>
-
 /*
  * The ft_strcmpchr() functions lexicographically compare 
  * the null-terminated string str with char c.
