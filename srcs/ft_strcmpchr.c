@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/23 04:14:45 by nismail       #+#    #+#                 */
-/*   Updated: 2022/02/06 13:43:57 by nismail       ########   odam.nl         */
+/*   Updated: 2022/02/06 13:49:46 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ int	ft_strcmpchr(const char *str, const char c)
 			return (1);
 		i++;
 	}
-	return ((int)str[i] - c);
+	return (0);
 }
