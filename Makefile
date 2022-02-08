@@ -4,7 +4,7 @@ AR = @ar
 AR_FLAGS = -rcs
 
 COMPILER = @gcc
-COMPILER_FLAGS = -Wall -Werror -Wextra
+COMPILER_FLAGS = -Wall -Werror -Wextra -Iincludes/
 
 # Configuration...
 
@@ -31,7 +31,7 @@ SOURCE_FILES	=	ft_isalpha.c \
 					ft_strchr.c \
 					ft_strrchr.c \
 					ft_strcmp.c \
-					ft_strcmpchr.c \
+					ft_chrcmp.c \
 					ft_strncmp.c \
 					ft_strnstr.c \
 					ft_atoi.c \

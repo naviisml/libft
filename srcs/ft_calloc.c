@@ -6,11 +6,11 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/28 15:54:59 by nismail       #+#    #+#                 */
-/*   Updated: 2021/12/05 15:53:22 by navi          ########   odam.nl         */
+/*   Updated: 2022/02/08 16:49:06 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include <libft.h>
 
 /*
  * The ft_malloc(), ft_calloc(), ft_valloc(), ft_realloc(), 

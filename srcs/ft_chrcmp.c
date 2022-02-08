@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
 /*
  * The ft_chrncmp() functions lexicographically compare 
  * the null-terminated string str with char c.

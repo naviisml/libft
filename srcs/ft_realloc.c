@@ -6,11 +6,11 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/14 08:37:57 by nismail       #+#    #+#                 */
-/*   Updated: 2022/01/20 14:29:28 by nismail       ########   odam.nl         */
+/*   Updated: 2022/02/08 16:49:06 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include <libft.h>
 
 /*
 *
