@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:35:38 by nismail       #+#    #+#                 */
-/*   Updated: 2022/03/08 16:58:48 by navi          ########   odam.nl         */
+/*   Updated: 2022/03/08 17:01:36 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_isaldigit(char *str)
 {
 	while (*str != '\0')
 	{
-		if (ft_isdigit(str) == 0)
+		if (ft_isdigit(*str) == 0)
 			return (0);
 		str++;
 	}

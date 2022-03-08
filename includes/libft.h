@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:33:59 by nismail       #+#    #+#                 */
-/*   Updated: 2022/02/08 16:47:16 by nismail       ########   odam.nl         */
+/*   Updated: 2022/03/08 17:00:43 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct s_list
 
 int		ft_isalpha(int arg);
 int		ft_isdigit(int arg);
+int		ft_isaldigit(char *str);
 int		ft_isalnum(int arg);
 int		ft_isascii(int c);
 int		ft_isprint(int arg);
