@@ -1,33 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_bzero.c                                         :+:    :+:            */
+/*   ft_chrcmp.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/10/11 01:41:44 by nismail       #+#    #+#                 */
-/*   Updated: 2022/02/08 16:49:06 by nismail       ########   odam.nl         */
+/*   Created: 2021/11/23 04:14:45 by nismail       #+#    #+#                 */
+/*   Updated: 2022/02/06 13:49:46 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
 /*
-*
-* The ft_bzero() function writes n zeroed bytes to the string s.
-* If n is zero, ft_bzero() does nothing.
-*
-*/
-
-void	ft_bzero(void *str, size_t n)
+ * The ft_chrncmp() functions lexicographically compare 
+ * the null-terminated string str with char c.
+ */
+int	ft_chrncmp(const char *str, const char c, int n)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (n > 0)
+	while (str[i] != '\0' && i < n)
 	{
-		*(char *)(str + i) = 0;
+		if (str[i] != c)
+			return (1);
 		i++;
-		n--;
 	}
+	return (0);
+}
+
+/*
+ * The ft_chrcmp() functions lexicographically compare 
+ * the null-terminated string str with char c.
+ */
+int	ft_chrcmp(const char *str, const char c)
+{
+	return (ft_chrncmp(str, c, ft_strlen(str)));
 }

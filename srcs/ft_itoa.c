@@ -6,11 +6,11 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:35:16 by nismail       #+#    #+#                 */
-/*   Updated: 2021/12/05 16:21:13 by navi          ########   odam.nl         */
+/*   Updated: 2022/02/08 16:49:06 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include <libft.h>
 
 /*
  * The ft_itoc_base() functions converts the int i to the base

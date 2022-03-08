@@ -6,17 +6,14 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/13 08:34:35 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/02 13:43:59 by nismail       ########   odam.nl         */
+/*   Updated: 2022/01/30 00:47:20 by nismail       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-*
-* The ft_strcmp() functions lexicographically compare 
-* the null-terminated strings s1 and s2.
-*
-*/
-
+ * The ft_strcmp() functions lexicographically compare 
+ * the null-terminated strings s1 and s2.
+ */
 int	ft_strcmp(const char *str1, const char *str2)
 {
 	while (*str1 && *str1 == *str2)
